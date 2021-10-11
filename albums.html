@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Album | Altarbell Provider </title> <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="https://provider.altarbell.com/images/favicon.png"> <!-- Datatable -->
+  <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet"> <!-- Custom Stylesheet -->
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--******************* Preloader start ********************-->
+  <div id="preloader">
+    <div class="sk-three-bounce">
+      <div class="sk-child sk-bounce1"></div>
+      <div class="sk-child sk-bounce2"></div>
+      <div class="sk-child sk-bounce3"></div>
+    </div>
+  </div>
+  <!--******************* Preloader end ********************-->
+  <!--********************************** Main wrapper start ***********************************-->
+  <div id="main-wrapper">
+    <!--********************************** Nav header start ***********************************-->
+    <div class="nav-header"> <a href="index.html" class="brand-logo"> <img class="logo-abbr" src="./images/logo.png"
+          alt=""> <img class="logo-compact" src="./images/logo-text.png" alt=""> <img class="brand-title"
+          src="./images/logo-text.png" alt=""> </a>
+      <div class="nav-control">
+        <div class="hamburger"> <span class="line"></span><span class="line"></span><span class="line"></span> </div>
+      </div>
+    </div>
+    <!--********************************** Nav header end ***********************************-->
+    <!--********************************** Header start ***********************************-->
+    <div class="header">
+      <div class="header-content">
+        <nav class="navbar navbar-expand">
+          <div class="collapse navbar-collapse justify-content-between">
+            <div class="header-left">
+              <div class="search_bar dropdown"> <span class="search_icon p-3 c-pointer" data-toggle="dropdown"> <i
+                    class="mdi mdi-magnify"></i> </span>
+                <div class="dropdown-menu p-0 m-0">
+                  <form> <input class="form-control" type="search" placeholder="Search" aria-label="Search"> </form>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav header-right">
+              <li class="nav-item dropdown notification_dropdown"> <a class="nav-link" href="#" role="button"
+                  data-toggle="dropdown"> <i class="mdi mdi-bell"></i>
+                  <div class="pulse-css"></div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <ul class="list-unstyled">
+                    <li class="media dropdown-item"> <span class="success"><i class="ti-user"></i></span>
+                      <div class="media-body"> <a href="#">
+                          <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully </p>
+                        </a> </div> <span class="notify-time">3:20 am</span>
+                    </li>
+                    <li class="media dropdown-item"> <span class="primary"><i class="ti-shopping-cart"></i></span>
+                      <div class="media-body"> <a href="#">
+                          <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                        </a> </div> <span class="notify-time">3:20 am</span>
+                    </li>
+                    <li class="media dropdown-item"> <span class="danger"><i class="ti-bookmark"></i></span>
+                      <div class="media-body"> <a href="#">
+                          <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved. </p>
+                        </a> </div> <span class="notify-time">3:20 am</span>
+                    </li>
+                    <li class="media dropdown-item"> <span class="primary"><i class="ti-heart"></i></span>
+                      <div class="media-body"> <a href="#">
+                          <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                        </a> </div> <span class="notify-time">3:20 am</span>
+                    </li>
+                    <li class="media dropdown-item"> <span class="success"><i class="ti-image"></i></span>
+                      <div class="media-body"> <a href="#">
+                          <p><strong> James.</strong> has added a<strong>customer</strong> Successfully </p>
+                        </a> </div> <span class="notify-time">3:20 am</span>
+                    </li>
+                  </ul> <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                </div>
+              </li>
+              <li class="nav-item dropdown header-profile"> <a class="nav-link" href="#" role="button"
+                  data-toggle="dropdown"> <i class="mdi mdi-account"></i> </a>
+                <div class="dropdown-menu dropdown-menu-right"> <a href="./app-profile.html" class="dropdown-item"> <i
+                      class="icon-user"></i> <span class="ml-2">Profile </span> </a> <a href="./email-inbox.html"
+                    class="dropdown-item"> <i class="icon-envelope-open"></i> <span class="ml-2">Inbox </span> </a> <a
+                    href="./page-login.html" class="dropdown-item"> <i class="icon-key"></i> <span class="ml-2">Logout
+                    </span> </a> </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--********************************** Header end ti-comment-alt ***********************************-->
+    <!--********************************** Sidebar start ***********************************-->
+    <div class="quixnav">
+      <div class="quixnav-scroll">
+        <ul class="metismenu" id="menu">
+          <li class="nav-label first">Main Menu</li>
+          <!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+                          </li> -->
+          <li><a class="" href="javascript:void()" aria-expanded="false"><i class="icon icon-app-store"></i><span
+                class="nav-text">Dashboard</span></a>
+          </li>
+          <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon icon-single-04"></i><span
+                class="nav-text">My Profile</span></a>
+            <ul aria-expanded="false">
+              <li><a href="profile.html">View Profile</a></li>
+              <li><a href="edit-profile.html">Edit Profile</a></li>
+            </ul>
+          </li>
+          <li><a class="" href="albums.html" aria-expanded="false"><i class="icon icon-single-04"></i><span
+                class="nav-text">My Albums</span></a>
+          </li>
+      
+      
+      
+      </div>
+    </div>
+    <!--********************************** Sidebar end ***********************************-->
+    <!--********************************** Content body start ***********************************-->
+    <div class="content-body">
+      <div class="container-fluid">
+        <div class="row page-titles mx-0">
+          <div class="col-sm-6 p-md-0">
+            <div class="welcome-text">
+              <h4>My Album</h4>
+            </div>
+          </div>
+
+          <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+            <div class="bootstrap-modal">
+              <!-- Button trigger modal --> <button type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#basicModal">Add a New Album</button> <!-- Modal -->
+              <div class="modal fade" id="basicModal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Create New Album</h5> <button type="button" class="close"
+                        data-dismiss="modal"><span>&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="#">
+                        <div class="form-group"> <label><strong>Title</strong></label> <input type="text" class="form-control"
+                            required> </div>
+                        <div class="form-group"> <label>Category</label> <select class="form-control" id="edit_category_id"
+                            name="category_id">
+                            <option selected disabled>Select an option</option>
+                            <option value="f07bd2e0-8d61-11eb-8cc2-ddcda0409cde">DayStar</option>
+                            <option value="bba59210-8d65-11eb-9961-f1adc705818a">Winners</option>
+                            <option value="a1b8a600-8d6a-11eb-aab9-01f5fe73ba89">Inspiration</option>
+                            <option value="aebc3b00-8d6a-11eb-b813-d3663504d461">Motivation</option>
+                            <option value="7679aee0-8e19-11eb-94dd-b740c2f2042c">Devotional</option>
+                            <option value="852e2ba0-8e19-11eb-9901-b7e3c91fb310">Leadership</option>
+                            <option value="95122c60-8e19-11eb-912c-67d36d532929">Business &amp; Career</option>
+                            <option value="a2843f60-8e19-11eb-8dec-f302d9d336be">Faith</option>
+                            <option value="ad4f2740-8e19-11eb-b3a8-71af97f275b0">Finance</option>
+                            <option value="8121b180-8e1a-11eb-980d-07c6f0942ed1">Health</option>
+                            <option value="90401520-8e1a-11eb-abb2-1508ecb90b10">Praise &amp; Worship</option>
+                            <option value="4775a960-8e22-11eb-a48e-4b0a3faeffcf">Redeemed</option>
+                            <option value="0e62f990-a384-11eb-afdf-81f12e60b259">Sermon</option>
+                          </select> </div>
+                        <div class="mb-3"> <label for="formFile" class="form-label">Album Art</label> <input class="form-control"
+                            type="file" id="formFile"> </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- row -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">My Albums</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table id="example" class="display" style="min-width: 845px">
+                    <thead>
+                      <tr>
+                        <th>Album Art</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Songs</th>
+                        <th>Date Created</th>
+                        <th>Salary</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--********************************** Content body end ***********************************-->
+    <!--********************************** Footer start ***********************************-->
+    <div class="footer">
+      <div class="copyright">
+        <p>Copyright © 2021 <a href="https://nqb8.co/" target="_blank">NQB8 Group.</a> All Rights Reserved</p>
+      </div>
+    </div>
+    <!--********************************** Footer end ***********************************-->
+    <!--********************************** Support ticket button start ***********************************-->
+    <!--********************************** Support ticket button end ***********************************-->
+  </div>
+  <!--********************************** Main wrapper end ***********************************-->
+  <!--********************************** Scripts ***********************************-->
+  <!-- Required vendors -->
+  <script src="./vendor/global/global.min.js"></script>
+  <script src="./js/quixnav-init.js"></script>
+  <script src="./js/custom.min.js"></script> <!-- Datatable -->
+  <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="./js/plugins-init/datatables.init.js"></script>
+</body>
+
+</html>
