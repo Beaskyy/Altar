@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Album Categories | Admin Dashboard</title>
+  <title>Content Providers | Admin Dashboard</title>
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="https://provider.altarbell.com/images/favicon.png">
   <link href="../vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -132,36 +132,10 @@
         <div class="row page-titles mx-0">
           <div class="col-sm-6 p-md-0">
             <div class="welcome-text">
-              <h4>Album Category</h4>
+              <h4>Content Providers</h4>
             </div>
           </div>
 
-          <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-            <div class="bootstrap-modal">
-              <!-- Button trigger modal --> <button type="button" class="btn btn-primary" data-toggle="modal"
-                data-target="#basicModal">Add New Category</button> <!-- Modal -->
-              <div class="modal fade" id="basicModal">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Create New Category</h5> <button type="button" class="close"
-                        data-dismiss="modal"><span>&times;</span> </button>
-                    </div>
-                    <div class="modal-body">
-                      <form action="#">
-                        <div class="form-group"> <label><strong>Name</strong></label> <input type="text"
-                            class="form-control" required> </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer"> <button type="button" class="btn btn-secondary"
-                        data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Add New Category</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="modal fade" id="editModal">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -189,19 +163,16 @@
         <div class="row">
           <div class="col-12">
             <div class="card">
-              <div class="card-header">
-                <h4 class="card-title">Basic Datatable</h4>
-              </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table id="example" class="display" style="min-width: 845px">
                     <thead>
                       <tr>
                         <th>SN</th>
+                        <th>Avatart</th>
                         <th>Name</th>
                         <th>Album Count</th>
-                        <th>Date Created</th>
-                        <th>Last Updated</th>
+                        <th>Member Since</th>
                         <th>Action</th>
                       </tr>
                     </thead>
