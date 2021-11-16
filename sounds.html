@@ -117,38 +117,37 @@
 
           <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
             <div class="bootstrap-modal">
-              <!-- Button trigger modal --> <button type="button" class="btn btn-primary" data-toggle="modal"
-                data-target="#basicModal">Add New Sounds</button> <!-- Modal -->
+              <!-- Button trigger modal -->
+              <!-- Modal -->
               <div class="modal fade" id="basicModal">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title">Add New Sound</h5> <button type="button" class="close"
+                      <h5 class="modal-title">Edit Sound info</h5> <button type="button" class="close"
                         data-dismiss="modal"><span>&times;</span> </button>
                     </div>
                     <div class="modal-body">
                       <form action="#">
-                        <div class="form-group"> <label><strong>Album</strong></label> <input type="text" value="Album Name"
-                            class="form-control" required> </div>
-                            <div class="form-group"> <label><strong>Sound Title</strong></label> <input type="text"
-                                class="form-control" required> </div>
+                            <div class="form-group"> <label><strong>Title</strong></label> <input type="text"
+                                class="form-control" value="Paranoid" required> </div>
                         <div class="form-group">
                           <label for="description">Description</label>
                           <textarea class="textarea_editor form-control bg-transparent" rows="3"
-                            placeholder="Enter Description"></textarea>
+                            placeholder="Enter Description">---</textarea>
                         </div>
                         <div class="form-group"> <label><strong>Play date</strong></label> <input type="date" value="Album Name"
                             class="form-control" required> </div>
-                        <label>Art Album</label>
+                        <label>Audio file</label>
                         <div class="drop-zone">
                           <span class="drop-zone__prompt">Drop file here or click to upload</span>
                           <input type="file" name="myFile" class="drop-zone__input">
                         </div>
+                        <small>Leave empty to maintain the original soundtrack</small>
                       </form>
                     </div>
                     <div class="modal-footer"> <button type="button" class="btn btn-secondary"
                         data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">Update Sounds</button>
                     </div>
                   </div>
                 </div>
@@ -224,6 +223,7 @@
                         <th>Album</th>
                         <th>Date added</th>
                         <th>Last Updated</th>
+                        <th>Actions</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -233,6 +233,8 @@
                         <td>Beerbongs &amp; Bentlys</td>
                         <td>April 27</td>
                         <td class="color-primary">19 hours ago</td>
+                        <td><a href="view-sounds.html" class="badge badge-primary">view sounds</a> <a href="javascript:void()" data-toggle="modal"
+                          data-target="#basicModal" class="badge badge-warning text-white">edit</a></td>
                       </tr>
                       <tr>
                         <th>2</th>
@@ -242,6 +244,8 @@
                         <td>Beerbongs &amp; Bentlys</td>
                         <td>April 27</td>
                         <td>19 hours ago</td>
+                        <td><a href="view-sounds.html" class="badge badge-primary">view sounds</a> <a href="javascript:void()"
+                            data-toggle="modal" data-target="#basicModal" class="badge badge-warning text-white">edit</a></td>
                       </tr>
                       <tr>
                         <th>3</th>
@@ -251,6 +255,8 @@
                         <td>Beerbongs &amp; Bentlys</td>
                         <td>April 27</td>
                         <td>19 hours Ago</td>
+                        <td><a href="view-sounds.html" class="badge badge-primary">view sounds</a> <a href="javascript:void()"
+                            data-toggle="modal" data-target="#basicModal" class="badge badge-warning text-white">edit</a></td>
                       </tr>
                     </tbody>
                   </table>
