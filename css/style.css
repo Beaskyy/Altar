@@ -19436,7 +19436,8 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   border-radius: 10px;
   overflow: hidden;
   background-color: #cccccc;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -19582,5 +19583,14 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   height: 100%;
   width: 0%;
   transition: width 0.1s linear;
+}
+p {
+  color: #111;
+}
+td {
+  color: #111;
+}
+th {
+  color: #111;
 }
 /*# sourceMappingURL=style.css.map */
