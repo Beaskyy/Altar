@@ -150,11 +150,11 @@
             <div class="card">
               <div class="card-body">
                 <div class="row mb-4">
-                <div class="col-md-4 my-3">
+                <div class="col-md-6 my-3">
                   <img src="http://www.monotsuites.com/assets/pages/media/profile/profile_user.jpg" class="img-fluid profile-img"
                     alt="profile image">
                 </div>
-                <div class="col-md-8 my-3">
+                <div class="col-md-6 my-3">
                   <h4 class="text-primary mb-4">Personal Information</h4>
                   <h5><strong>Name</strong></h5>
                   <p>Mitchell C.Shay</p>
@@ -166,11 +166,11 @@
                   <p>Nigeria, Lagos</p>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="https://assets.capitalxtra.com/2013/48/best-hip-hop-album-covers-9-1386002950-view-0.jpg" class="img-fluid profile-img" alt="">
+              <div class="row m-5">
+                <div class="col-md-8 my-5">
+                  <img src="https://img.freepik.com/free-psd/furniture-facebook-cover-web-banner-template_237398-329.jpg?size=626&ext=jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <h4 class="text-primary">Advert Information</h4>
                   <h5><strong>Category</strong></h5>
                   <p>Motivation</p>
@@ -188,14 +188,59 @@
                   <p>1,000</p>
                 </div>
               </div>
-              <div class="float-right">
-                <button type="submit" class="btn btn-primary">approve</button>
-                <button type="submit" class="btn btn-danger">decline</button>
+              <div class="row float-right">
+                <!-- Button trigger modal --> 
+                <button type="button" class="btn btn-primary" data-toggle="modal"
+                  data-target="#approveModal">Approve</button> 
+                <button type="button" class="btn btn-danger mx-2" data-toggle="modal" data-target="#declineModal">decline</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+      <!-- Approve Modal -->
+      <div class="modal fade" id="approveModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Approve Advert</h5> <button type="button" class="close"
+                data-dismiss="modal"><span>&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you want to approve advert?</p>
+            </div>
+            <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+              <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Decline Modal -->
+      <div class="modal fade" id="declineModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Decline Advert</h5> <button type="button" class="close"
+                data-dismiss="modal"><span>&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you want to decline advert?</p>
+            </div>
+            <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+              <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
     <!--**********************************
             Content body end
