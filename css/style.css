@@ -19406,8 +19406,8 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 /* Drag and drop styling */
 .drop-zone {
-  max-width: 200px;
-  height: 200px;
+  max-width: 100%;
+  height: 500px;
   padding: 25px;
   display: flex;
   align-items: center;
@@ -19418,7 +19418,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   font-size: 20px;
   cursor: pointer;
   color: #cccccc;
-  border: 4px dashed #009578;
+  border: 3px dashed #d7d7d7;
   border-radius: 10px;
 }
 
@@ -19592,5 +19592,14 @@ td {
 }
 th {
   color: #111;
+}
+label {
+  color: #111;
+}
+
+.profile-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
