@@ -19598,13 +19598,21 @@ label {
 }
 
 .profile-img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .advert-img {
   width: 100%;
   object-fit: contain;
+}
+
+.provider-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
