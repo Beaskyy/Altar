@@ -207,7 +207,7 @@
   margin: 10px 0;
   max-height: 260px;
   overflow: auto;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 .music-list ul::-webkit-scrollbar{
   width: 0px;
