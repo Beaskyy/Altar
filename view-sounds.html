@@ -12,6 +12,10 @@
   <!-- Custom Stylesheet -->
   <link href="./css/style.css" rel="stylesheet">
 
+  <!-- Music Stylesheet -->
+  <link rel="stylesheet" href="music.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -120,36 +124,12 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="card">
+              <div class="card-body">
               <div class="row my-4 mx-3">
                 <div class="col-md-5">
                   <img
                     src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cold-night-album-cover-design-template-f4373773b6a4babb5a33af50b3f4725e.jpg?ts=1615898184"
                     class="card-img-top album-art album-art-main" alt="...">
-                        <div class="music-container" id="music-container">
-                          <div class="music-info">
-                            <h4 id="title"></h4>
-                            <div class="progress-container" id="progress-container">
-                              <div class="progress" id="progress"></div>
-                            </div>
-                          </div>
-                        
-                          <audio src="music/ukulele.mp3" id="audio"></audio>
-                        
-                          <div class="img-container">
-                            <img src="images/ukulele.jpg" alt="music-cover" id="cover" />
-                          </div>
-                          <div class="navigation">
-                            <button id="prev" class="action-btn">
-                              <i class="fas fa-backward"></i>
-                            </button>
-                            <button id="play" class="action-btn action-btn-big">
-                              <i class="fas fa-play"></i>
-                            </button>
-                            <button id="next" class="action-btn">
-                              <i class="fas fa-forward"></i>
-                            </button>
-                          </div>
-                        </div>
                 </div>
                 
                 <div class="col-md-5 offset-md-2 my-5">
@@ -168,7 +148,132 @@
                   <p>Tuesday, 16th of November, 2021</p>
                 </div>
               </div>
-              
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="row my-4 mx-3">
+                    <div class="col-md-3">
+                      <img
+                        src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cold-night-album-cover-design-template-f4373773b6a4babb5a33af50b3f4725e.jpg?ts=1615898184"
+                        class="card-img-top album-art album-art-main" alt="...">
+                    </div>
+                    <div class="col-md-6 mt-5">
+                      <p class="font-weight-bold">PLAYLIST</p>
+                      <h2 class="text-primary">Beerbongs &amp; Bentlys</h2>
+                      <p>3 songs, 11min</p>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-responsive-sm table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Album</th>
+                            <th>Date added</th>
+                            <th>Last Updated</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>1</th>
+                            <td> <img
+                                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cold-night-album-cover-design-template-f4373773b6a4babb5a33af50b3f4725e.jpg?ts=1615898184"
+                                width="30" class="img-fluid mr-3" alt=""> Paranoid</td>
+                            <td>Beerbongs &amp; Bentlys</td>
+                            <td>April 27</td>
+                            <td class="color-primary">19 hours ago</td>
+                            <td><a href="view-sounds.html" class="badge badge-primary">view sounds</a> <a href="javascript:void()"
+                                data-toggle="modal" data-target="#basicModal" class="badge badge-warning text-white">edit</a></td>
+                          </tr>
+                          <tr>
+                            <th>2</th>
+                            <td> <img
+                                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cold-night-album-cover-design-template-f4373773b6a4babb5a33af50b3f4725e.jpg?ts=1615898184"
+                                width="30" class="img-fluid mr-3" alt="">Spoil My Night</td>
+                            <td>Beerbongs &amp; Bentlys</td>
+                            <td>April 27</td>
+                            <td>19 hours ago</td>
+                            <td><a href="view-sounds.html" class="badge badge-primary">view sounds</a> <a href="javascript:void()"
+                                data-toggle="modal" data-target="#basicModal" class="badge badge-warning text-white">edit</a></td>
+                          </tr>
+                          <tr>
+                            <th>3</th>
+                            <td> <img
+                                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cold-night-album-cover-design-template-f4373773b6a4babb5a33af50b3f4725e.jpg?ts=1615898184"
+                                width="30" class="img-fluid mr-3" alt="">Rich &amp; Sad</td>
+                            <td>Beerbongs &amp; Bentlys</td>
+                            <td>April 27</td>
+                            <td>19 hours Ago</td>
+                            <td><a href="view-sounds.html" class="badge badge-primary">view sounds</a> <a href="javascript:void()"
+                                data-toggle="modal" data-target="#basicModal" class="badge badge-warning text-white">edit</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="card py-5" style="background: linear-gradient(var(--pink) 0%, var(--violet) 100%); box-sizing: border-box;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="wrapper">
+                      <div class="top-bar">
+                        <i class="material-icons">expand_more</i>
+                        <span>Now Playing</span>
+                        <i class="material-icons">more_horiz</i>
+                      </div>
+                      <div class="img-area">
+                        <img src="" alt="">
+                      </div>
+                      <div class="song-details">
+                        <p class="name"></p>
+                        <p class="artist"></p>
+                      </div>
+                      <div class="progress-area">
+                        <div class="progress-bar">
+                          <audio id="main-audio" src=""></audio>
+                        </div>
+                        <div class="song-timer">
+                          <span class="current-time">0:00</span>
+                          <span class="max-duration">0:00</span>
+                        </div>
+                      </div>
+                      <div class="controls">
+                        <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                        <i id="prev" class="material-icons">skip_previous</i>
+                        <div class="play-pause">
+                          <i class="material-icons play">play_arrow</i>
+                        </div>
+                        <i id="next" class="material-icons">skip_next</i>
+                        <i id="more-music" class="material-icons">queue_music</i>
+                      </div>
+                      <div class="music-list">
+                        <div class="headers">
+                          <div class="row">
+                            <i class="list material-icons">queue_music</i>
+                            <span class="text-dark">Music list</span>
+                          </div>
+                          <i id="close" class="material-icons">close</i>
+                        </div>
+                        <ul>
+                          <!-- here li list are coming from js -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -193,7 +298,10 @@
   <script src="./js/custom.min.js"></script>
 
   <!-- Media Player JS -->
-  <script src="media-player.js"></script>
+  <!-- <script src="media-player.js"></script> -->
+
+  <script src="js/music-list.js"></script>
+  <script src="js/music.js"></script>
 </body>
 
 </html>
